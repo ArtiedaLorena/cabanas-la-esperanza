@@ -9,6 +9,7 @@ import { Logo } from "./Logo";
 export function Navbar() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const inverted = scrolled || open;
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
@@ -32,39 +33,53 @@ export function Navbar() {
     return () => window.removeEventListener("keydown", onKey);
   }, []);
 
+  useEffect(() => {
+    const media = window.matchMedia("(min-width: 1024px)");
+    const onChange = () => {
+      if (media.matches) setOpen(false);
+    };
+    media.addEventListener("change", onChange);
+    return () => media.removeEventListener("change", onChange);
+  }, []);
+
   return (
     <header
       className={cn(
-        "fixed inset-x-0 top-0 z-50 transition-colors duration-300",
-        scrolled || open ? "bg-cream/95 shadow-sm backdrop-blur-md" : "bg-transparent",
+        "fixed inset-x-0 top-0 z-50 pt-[env(safe-area-inset-top)] transition-colors duration-300",
+        inverted ? "bg-cream/95 shadow-sm backdrop-blur-md" : "bg-transparent",
       )}
     >
       <nav
-        className="mx-auto flex h-[4.25rem] max-w-6xl items-center justify-between px-5 sm:h-[4.75rem] sm:px-8 lg:px-10"
+        className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-3 px-4 sm:h-[4.75rem] sm:gap-4 sm:px-8 lg:px-10"
         aria-label="Principal"
       >
-        <a href="#inicio" className="flex min-h-11 items-center gap-2.5" aria-label="Cabañas La Esperanza, Villa Larca">
+        <a
+          href="#inicio"
+          className="flex min-h-11 min-w-0 items-center gap-2 sm:gap-2.5"
+          aria-label="Cabañas La Esperanza, Villa Larca"
+          onClick={() => setOpen(false)}
+        >
           <span
             className={cn(
-              "flex h-11 w-14 shrink-0 items-center justify-center rounded-xl px-1",
-              scrolled || open ? "bg-transparent" : "bg-cream/95 shadow-sm",
+              "flex h-10 w-12 shrink-0 items-center justify-center rounded-xl px-1 sm:h-11 sm:w-14",
+              inverted ? "bg-transparent" : "bg-cream/95 shadow-sm",
             )}
           >
-            <Logo variant="mark" className="h-8 w-auto" />
+            <Logo variant="mark" className="h-7 w-auto sm:h-8" />
           </span>
-          <span className="leading-tight">
+          <span className="min-w-0 leading-tight">
             <span
               className={cn(
-                "block font-serif text-lg sm:text-xl",
-                scrolled || open ? "text-ink" : "text-cream drop-shadow-sm",
+                "block truncate font-serif text-base sm:text-xl",
+                inverted ? "text-ink" : "text-cream drop-shadow-sm",
               )}
             >
               La Esperanza
             </span>
             <span
               className={cn(
-                "block text-[0.65rem] uppercase tracking-[0.18em]",
-                scrolled || open ? "text-ink-soft" : "text-cream/75",
+                "block truncate text-[0.6rem] uppercase tracking-[0.16em] sm:text-[0.65rem] sm:tracking-[0.18em]",
+                inverted ? "text-ink-soft" : "text-cream/75",
               )}
             >
               Villa Larca
@@ -72,41 +87,30 @@ export function Navbar() {
           </span>
         </a>
 
-        <ul className="hidden items-center gap-7 lg:flex">
-          {navLinks.map((link) => (
-            <li key={link.href}>
-              <a
-                href={link.href}
-                className={cn(
-                  "text-sm transition-colors",
-                  scrolled || open ? "text-ink-soft hover:text-ink" : "text-cream/85 hover:text-cream",
-                )}
-              >
-                {link.label}
-              </a>
-            </li>
-          ))}
-        </ul>
-
-        <div className="flex items-center gap-2">
-          <Button href="#reservar" className="hidden min-h-11 px-5 sm:inline-flex">
+        <div className="flex shrink-0 items-center gap-2 sm:gap-3">
+          <ul className="hidden items-center gap-4 lg:flex xl:gap-6">
+            {navLinks.map((link) => (
+              <li key={link.href}>
+                <a
+                  href={link.href}
+                  className={cn(
+                    "whitespace-nowrap text-[0.8125rem] transition-colors xl:text-sm",
+                    inverted ? "text-ink-soft hover:text-ink" : "text-cream/85 hover:text-cream",
+                  )}
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+          <Button href="#reservar" className="hidden min-h-11 px-5 xl:inline-flex">
             Consultar disponibilidad
-          </Button>
-          <Button
-            href={buildWhatsAppUrl()}
-            variant="whatsapp"
-            external
-            className="min-h-11 px-4 sm:hidden"
-            ariaLabel="Reservar por WhatsApp"
-          >
-            <Icon name="whatsapp" className="h-4 w-4" />
-            WhatsApp
           </Button>
           <button
             type="button"
             className={cn(
               "grid h-11 w-11 place-items-center rounded-full lg:hidden",
-              scrolled || open
+              inverted
                 ? "border border-ink/10 bg-cream/80 text-ink"
                 : "border border-cream/30 bg-night/30 text-cream",
             )}
@@ -123,9 +127,9 @@ export function Navbar() {
       <div
         id="menu-mobile"
         hidden={!open}
-        className="border-t border-ink/10 bg-cream lg:hidden"
+        className="max-h-[calc(100svh-4rem-env(safe-area-inset-top))] overflow-y-auto border-t border-ink/10 bg-cream lg:hidden"
       >
-        <ul className="flex flex-col gap-1 px-5 py-4">
+        <ul className="flex flex-col gap-1 px-4 py-4 pb-[max(1rem,env(safe-area-inset-bottom))] sm:px-8">
           {navLinks.map((link) => (
             <li key={link.href}>
               <a
@@ -140,6 +144,18 @@ export function Navbar() {
           <li className="pt-2">
             <Button href="#reservar" className="w-full" onClick={() => setOpen(false)}>
               Consultar disponibilidad
+            </Button>
+          </li>
+          <li>
+            <Button
+              href={buildWhatsAppUrl()}
+              variant="whatsapp"
+              external
+              className="w-full"
+              onClick={() => setOpen(false)}
+            >
+              <Icon name="whatsapp" className="h-4 w-4" />
+              Reservar por WhatsApp
             </Button>
           </li>
           <li>
