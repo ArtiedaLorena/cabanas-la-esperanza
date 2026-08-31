@@ -10,7 +10,7 @@ import { Location } from "./components/Location";
 import { Navbar } from "./components/Navbar";
 import { Services } from "./components/Services";
 import { Surroundings } from "./components/Surroundings";
-import { StickyMobileCTA, WhatsAppButton } from "./components/WhatsAppButton";
+import { WhatsAppButton } from "./components/WhatsAppButton";
 
 export default function App() {
   return (
@@ -38,7 +38,6 @@ export default function App() {
       </main>
       <Footer />
       <WhatsAppButton />
-      <StickyMobileCTA />
     </>
   );
 }

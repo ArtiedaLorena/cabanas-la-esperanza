@@ -33,7 +33,7 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-to-r from-night/40 via-transparent to-transparent" />
       </div>
 
-      <div className="relative mx-auto flex min-h-[100svh] max-w-6xl flex-col justify-end px-5 pb-28 pt-28 sm:px-8 sm:pb-16 lg:justify-center lg:px-10 lg:pb-20">
+      <div className="relative mx-auto flex min-h-[100svh] max-w-6xl flex-col justify-end px-5 pb-16 pt-28 sm:px-8 lg:justify-center lg:px-10 lg:pb-20">
         <p className="reveal text-[0.72rem] font-semibold uppercase tracking-[0.24em] text-sand">
           Villa Larca · San Luis
         </p>

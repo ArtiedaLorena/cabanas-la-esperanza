@@ -43,7 +43,7 @@ export function FinalCTA() {
 
 export function Footer() {
   return (
-    <footer className="border-t border-ink/10 bg-night pb-[calc(7rem+env(safe-area-inset-bottom))] text-cream sm:pb-10">
+    <footer className="border-t border-ink/10 bg-night pb-[max(2.5rem,env(safe-area-inset-bottom))] text-cream">
       <div className="mx-auto grid max-w-6xl gap-10 px-5 py-12 sm:px-8 lg:grid-cols-[1.2fr_0.8fr_0.8fr] lg:px-10">
         <div>
           <a
