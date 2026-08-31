@@ -103,9 +103,11 @@ export function Navbar() {
               </li>
             ))}
           </ul>
-          <Button href="#reservar" className="hidden min-h-11 px-5 xl:inline-flex">
-            Consultar disponibilidad
-          </Button>
+          <div className="hidden xl:block">
+            <Button href="#reservar" className="min-h-11 px-5">
+              Consultar disponibilidad
+            </Button>
+          </div>
           <button
             type="button"
             className={cn(
