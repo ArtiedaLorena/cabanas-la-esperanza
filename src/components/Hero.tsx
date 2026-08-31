@@ -38,7 +38,9 @@ export function Hero() {
           Villa Larca · San Luis
         </p>
         <h1 className="reveal reveal-delay-1 mt-3 max-w-3xl font-serif text-[2.55rem] leading-[1.05] sm:text-6xl lg:text-[4.4rem]">
-          Cabañas La Esperanza, para descansar en las sierras
+          Cabañas La Esperanza,
+          <br />
+          para descansar en las sierras
         </h1>
         <p className="reveal reveal-delay-2 mt-5 max-w-xl text-base text-cream/88 sm:text-lg">
           Un complejo de cabañas en San Martín 973, para familias y grupos.
