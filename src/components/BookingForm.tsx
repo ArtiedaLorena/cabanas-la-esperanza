@@ -61,7 +61,7 @@ export function BookingForm() {
         <div className="relative hidden min-h-full lg:block">
           <Photo
             slug="cabana-parrilla"
-            alt="Patio y parrilla de Cabañas La Esperanza en Villa Larca"
+            alt="Patio y parrilla de Cabañas San Martín en Villa Larca"
             className="absolute inset-0 block h-full"
             imgClassName="h-full object-cover"
             sizes="40vw"
@@ -77,7 +77,7 @@ export function BookingForm() {
           <SectionTitle>Consultá disponibilidad</SectionTitle>
           <p className="mt-3 text-ink-soft">
             Este formulario no cobra ni confirma solo. Arma el mensaje y lo abrís
-            en WhatsApp para consultar las cabañas con La Esperanza.
+            en WhatsApp para consultar Cabañas San Martín.
           </p>
 
           <form className="mt-8 grid gap-4" onSubmit={onSubmit} noValidate>
@@ -144,7 +144,7 @@ export function BookingForm() {
                 name="notes"
                 rows={3}
                 className={`${inputClass} resize-y`}
-                placeholder="¿Viajan con niños? ¿Necesitan más de una cabaña? Contanos lo que haga falta."
+                placeholder="¿Preferís La Promesa o La Esperanza? ¿Viajan con niños? Contanos lo que haga falta."
               />
             </Field>
 

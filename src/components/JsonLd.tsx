@@ -54,7 +54,7 @@ export function JsonLd() {
   const webpage = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: `${site.name} | Cabañas en Villa Larca, San Luis`,
+    name: site.title,
     description: site.description,
     url: site.url,
     inLanguage: "es-AR",

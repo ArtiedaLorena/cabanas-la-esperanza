@@ -1,18 +1,43 @@
-import { benefits } from "../data/site";
+import { benefits, site } from "../data/site";
 import { Eyebrow, Section, SectionTitle } from "./Section";
 import { Icon } from "./Icon";
+import { Photo } from "./Photo";
 
 export function Benefits() {
   return (
     <Section id="cabanas" className="py-16 sm:py-24">
       <div className="max-w-2xl">
-        <Eyebrow>Por qué elegirnos</Eyebrow>
-        <SectionTitle>Un complejo simple, cuidado y listo para quedarse</SectionTitle>
+        <Eyebrow>Las cabañas</Eyebrow>
+        <SectionTitle>La Promesa y La Esperanza</SectionTitle>
         <p className="mt-4 text-ink-soft">
-          La Esperanza es un predio de cabañas en Villa Larca: patio, pileta y
-          sierras de fondo. Cada grupo se queda en su cabaña, con espacios
-          compartidos para el asado y el mate.
+          Dos cabañas independientes en Villa Larca: patio, pileta y sierras de
+          fondo. Cada grupo se queda en su unidad, con espacios compartidos para
+          el asado y el mate.
         </p>
+      </div>
+
+      <ul className="mt-10 grid gap-5 sm:grid-cols-2">
+        {site.cabins.map((cabin) => (
+          <li
+            key={cabin.name}
+            className="overflow-hidden rounded-[1.6rem] bg-white shadow-[var(--shadow-card)]"
+          >
+            <Photo
+              slug={cabin.slug}
+              alt={cabin.alt}
+              className="block aspect-[4/5] sm:aspect-[5/4]"
+              sizes="(max-width: 640px) 100vw, 50vw"
+            />
+            <div className="px-5 py-4">
+              <h3 className="font-serif text-2xl text-ink">{cabin.name}</h3>
+            </div>
+          </li>
+        ))}
+      </ul>
+
+      <div className="mt-14 max-w-2xl">
+        <Eyebrow>Por qué elegirnos</Eyebrow>
+        <SectionTitle>Un predio simple, cuidado y listo para quedarse</SectionTitle>
       </div>
 
       <ul className="mt-10 grid gap-4 sm:grid-cols-2">

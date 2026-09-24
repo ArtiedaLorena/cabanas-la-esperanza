@@ -12,7 +12,7 @@ export function FinalCTA() {
       <div className="relative overflow-hidden rounded-[2rem] bg-night text-cream">
         <Photo
           slug="complejo-pileta"
-          alt="Predio de Cabañas La Esperanza con pileta en Villa Larca"
+          alt="Predio de Cabañas San Martín con pileta en Villa Larca"
           className="absolute inset-0 block h-full w-full opacity-40"
           imgClassName="h-full object-cover"
           sizes="100vw"
@@ -22,7 +22,7 @@ export function FinalCTA() {
             ¿Listo para reservar?
           </p>
           <h2 className="mx-auto mt-3 max-w-2xl font-serif text-4xl leading-tight sm:text-5xl">
-            Las cabañas de Villa Larca te están esperando
+            Cabañas San Martín te están esperando
           </h2>
           <p className="mx-auto mt-4 max-w-lg text-cream/85">
             Consultá fechas ahora. Te respondemos por WhatsApp y coordinamos la
@@ -49,14 +49,14 @@ export function Footer() {
           <a
             href="#inicio"
             className="inline-flex min-h-11 items-center gap-2.5"
-            aria-label="Cabañas La Esperanza, Villa Larca"
+            aria-label="Cabañas San Martín, Villa Larca"
           >
             <span className="flex h-11 w-14 shrink-0 items-center justify-center rounded-xl bg-cream/95 px-1">
               <Logo variant="mark" className="h-8 w-auto" />
             </span>
             <span className="leading-tight">
-              <span className="block font-serif text-lg text-cream sm:text-xl">
-                La Esperanza
+              <span className="block font-serif text-base leading-tight text-cream sm:text-xl">
+                Cabañas San Martín
               </span>
               <span className="block text-[0.65rem] uppercase tracking-[0.18em] text-cream/75">
                 Villa Larca
@@ -64,8 +64,8 @@ export function Footer() {
             </span>
           </a>
           <p className="mt-4 max-w-sm text-sm text-cream/75">
-            Cabañas de alquiler en Villa Larca, San Luis. Reserva directa por
-            WhatsApp, teléfono o mail.
+            Cabañas San Martín en Villa Larca, San Luis. Reserva
+            directa por WhatsApp, teléfono o mail.
           </p>
         </div>
         <div>

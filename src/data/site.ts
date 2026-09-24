@@ -1,11 +1,24 @@
 export const site = {
-  name: "Cabañas La Esperanza",
-  shortName: "La Esperanza",
+  name: "Cabañas San Martín",
+  shortName: "Cabañas San Martín",
+  title: "Cabañas San Martín | Villa Larca",
+  cabins: [
+    {
+      name: "La Promesa",
+      slug: "cabana-madera-pileta",
+      alt: "Cabaña La Promesa junto a la pileta en Villa Larca",
+    },
+    {
+      name: "La Esperanza",
+      slug: "cabana-galeria",
+      alt: "Cabaña La Esperanza con galería en Villa Larca",
+    },
+  ] as const,
   tagline: "Descansá en Villa Larca, al pie de las sierras",
   url: "https://cabanaslaesperanza.com.ar",
   locale: "es_AR",
   description:
-    "Complejo de cabañas en Villa Larca, San Luis. Varias unidades independientes, pileta, parrilla, Wi-Fi, aire frío/calor y cochera cubierta. Reservá por WhatsApp.",
+    "Cabañas San Martín en Villa Larca, San Luis. Dos unidades independientes, La Promesa y La Esperanza, con pileta, parrilla, Wi-Fi, aire frío/calor y cochera cubierta. Reservá por WhatsApp.",
   instagram: {
     handle: "la_esperanza_alquiler",
     url: "https://www.instagram.com/la_esperanza_alquiler/",
@@ -53,38 +66,38 @@ export const navLinks = [
 export const gallery = [
   {
     slug: "pileta-sierras",
-    alt: "Pileta con vista a las Sierras de Comechingones en Cabañas La Esperanza, Villa Larca",
+    alt: "Pileta con vista a las Sierras de Comechingones en Cabañas San Martín, Villa Larca",
     caption: "Pileta con vista a las sierras",
   },
   {
     slug: "cabana-galeria",
-    alt: "Cabaña con galería, jardín y montañas de fondo en Villa Larca",
-    caption: "Cabaña y jardín",
+    alt: "Cabaña La Esperanza con galería y jardín en Villa Larca",
+    caption: "La Esperanza",
   },
   {
     slug: "cabana-cochera",
-    alt: "Cabaña con cochera cubierta en La Esperanza, Villa Larca",
-    caption: "Cochera cubierta",
+    alt: "Cabaña con cochera cubierta en Cabañas San Martín, Villa Larca",
+    caption: "Cochera",
   },
   {
     slug: "cabana-parrilla",
-    alt: "Patio con parrilla de ladrillo en Cabañas La Esperanza",
+    alt: "Patio con parrilla de ladrillo en Cabañas San Martín",
     caption: "Patio y parrilla",
   },
   {
     slug: "quincho-parrilla",
-    alt: "Quincho con parrilla cubierta y techo de madera en Cabañas La Esperanza",
+    alt: "Quincho con parrilla cubierta y techo de madera en Cabañas San Martín",
     caption: "Quincho para el asado",
   },
   {
     slug: "cabana-cartel",
-    alt: "Cartel de madera de Cabañas La Esperanza en San Martín 973, Villa Larca",
-    caption: "San Martín 973",
+    alt: "Cartel de Cabañas San Martín en Villa Larca",
+    caption: "Cabañas San Martín",
   },
   {
     slug: "complejo-pileta",
-    alt: "Vista del predio de La Esperanza con pileta y cabañas en Villa Larca",
-    caption: "El predio",
+    alt: "Vista del predio de La Promesa con pileta en Villa Larca",
+    caption: "La Promesa y pileta",
   },
   {
     slug: "sierras-comechingones",
@@ -98,25 +111,25 @@ export const gallery = [
   },
   {
     slug: "atardecer-luces",
-    alt: "Atardecer con luces en el jardín de Cabañas La Esperanza, Villa Larca",
+    alt: "Atardecer con luces en el jardín de Cabañas San Martín, Villa Larca",
     caption: "Atardecer en el jardín",
   },
   {
     slug: "entrada-principal",
-    alt: "Puerta de entrada de una cabaña en La Esperanza, Villa Larca",
+    alt: "Puerta de entrada de una cabaña en Cabañas San Martín, Villa Larca",
     caption: "Entrada",
   },
   {
     slug: "cabana-madera-pileta",
-    alt: "Cabaña con pileta en La Esperanza, Villa Larca",
-    caption: "Cabaña y pileta",
+    alt: "Cabaña La Promesa junto a la pileta en Villa Larca",
+    caption: "La Promesa",
   },
 ] as const;
 
 export const amenities = [
   {
     title: "Capacidad por unidad",
-    text: "Hay cabañas habilitadas para hasta 6 personas. Si son más, consultá por más de una unidad.",
+    text: "Hay cabañas habilitadas para hasta 6 personas. Si son más, consultá por La Promesa y La Esperanza juntas.",
   },
   {
     title: "Cocina equipada",
@@ -267,11 +280,11 @@ export const faqs = [
   },
   {
     q: "¿Cuántas personas entran?",
-    a: "Hay varias cabañas. La capacidad depende de cada una: algunas entran hasta 6 personas. Contanos cuántos son y te proponemos la que mejor calce, o más de una si hace falta.",
+    a: "Hay dos cabañas: La Promesa y La Esperanza. La capacidad depende de cada una: algunas entran hasta 6 personas. Contanos cuántos son y te proponemos la que mejor calce, o las dos si hace falta.",
   },
   {
     q: "¿Puedo reservar más de una cabaña?",
-    a: "Sí. Contanos cuántas personas viajan y te confirmamos disponibilidad de las cabañas que hagan falta.",
+    a: "Sí. Podés consultar La Promesa, La Esperanza o las dos. Contanos cuántas personas viajan y te confirmamos disponibilidad.",
   },
   {
     q: "¿Qué incluye el alojamiento?",
