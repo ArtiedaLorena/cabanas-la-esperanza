@@ -43,7 +43,7 @@ export function Hero() {
           para descansar en las sierras
         </h1>
         <p className="reveal reveal-delay-2 mt-5 max-w-xl text-base text-cream/88 sm:text-lg">
-          Dos cabañas independientes en San Martín 973: La Promesa y La Esperanza.
+          Dos cabañas independientes en Los Álamos 248: El Tala y Los Molles.
           Pileta, parrilla, Wi-Fi y cochera cubierta, al pie de los Comechingones.
         </p>
 
@@ -84,7 +84,7 @@ export function TrustBar() {
     { icon: "users" as const, label: "2 cabañas" },
     { icon: "snowflake" as const, label: "Aire frío / calor" },
     { icon: "car" as const, label: "Cochera cubierta" },
-    { icon: "pin" as const, label: "San Martín 973" },
+    { icon: "pin" as const, label: "Los Álamos 248" },
   ];
 
   return (

@@ -23,7 +23,7 @@ export function Services() {
           <Eyebrow>Servicios</Eyebrow>
           <SectionTitle>Unidades independientes, predio compartido</SectionTitle>
           <p className="mt-4 text-ink-soft">
-            La Promesa y La Esperanza son dos alojamientos aparte, con pileta,
+            El Tala y Los Molles son dos alojamientos aparte, con pileta,
             parrilla y jardín en común.
           </p>
           <p className="mt-3 text-sm text-ink-soft">
@@ -38,7 +38,7 @@ export function Services() {
         <div className="overflow-hidden rounded-[1.6rem] shadow-[var(--shadow-lift)]">
           <Photo
             slug="cabana-madera-pileta"
-            alt="Cabaña La Promesa junto a la pileta en Villa Larca"
+            alt="Cabaña Los Molles en Cabañas San Martín, Villa Larca"
             className="block aspect-[4/5] sm:aspect-[5/4]"
             sizes="(max-width: 1024px) 100vw, 540px"
           />

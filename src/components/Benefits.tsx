@@ -8,7 +8,7 @@ export function Benefits() {
     <Section id="cabanas" className="py-16 sm:py-24">
       <div className="max-w-2xl">
         <Eyebrow>Las cabañas</Eyebrow>
-        <SectionTitle>La Promesa y La Esperanza</SectionTitle>
+        <SectionTitle>El Tala y Los Molles</SectionTitle>
         <p className="mt-4 text-ink-soft">
           Dos cabañas independientes en Villa Larca: patio, pileta y sierras de
           fondo. Cada grupo se queda en su unidad, con espacios compartidos para
@@ -55,18 +55,7 @@ export function Benefits() {
 
       <div className="mt-8 flex items-start gap-3 rounded-2xl bg-moss/10 px-5 py-4 text-sm text-moss">
         <Icon name="check" className="mt-0.5 h-5 w-5 shrink-0" />
-        <p>
-          Listadas en el directorio oficial de alojamientos de la{" "}
-          <a
-            className="underline underline-offset-2"
-            href="https://municipalidadvillalarca.com/dondealojarse/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Municipalidad de Villa Larca
-          </a>
-          . Disponible todo el año.
-        </p>
+        <p>Predio de ejemplo para una landing de reservas. Disponible todo el año.</p>
       </div>
     </Section>
   );

@@ -10,7 +10,7 @@ export function Location() {
       <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
         <div>
           <Eyebrow>Ubicación</Eyebrow>
-          <SectionTitle>San Martín 973, Villa Larca</SectionTitle>
+          <SectionTitle>Los Álamos 248, Villa Larca</SectionTitle>
           <p className="mt-4 text-ink-soft">
             En el corazón del pueblo, al pie de las Sierras de los Comechingones,
             departamento Chacabuco, San Luis.
