@@ -26,7 +26,7 @@ export function Logo({ variant = "full", className = "h-11 w-auto" }: LogoProps)
       <source type="image/webp" srcSet={asset.src} />
       <img
         src={asset.fallback}
-        alt={variant === "mark" ? "" : "Cabañas La Esperanza, Villa Larca, San Luis"}
+        alt={variant === "mark" ? "" : "Cabañas San Martín, Villa Larca, San Luis"}
         width={asset.width}
         height={asset.height}
         className={className}

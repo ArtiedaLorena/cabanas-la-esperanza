@@ -56,7 +56,7 @@ export function Navbar() {
         <a
           href="#inicio"
           className="flex min-h-11 min-w-0 items-center gap-2 sm:gap-2.5"
-          aria-label="Cabañas La Esperanza, Villa Larca"
+          aria-label="Cabañas San Martín, Villa Larca"
           onClick={() => setOpen(false)}
         >
           <span
@@ -70,11 +70,11 @@ export function Navbar() {
           <span className="min-w-0 leading-tight">
             <span
               className={cn(
-                "block truncate font-serif text-base sm:text-xl",
+                "block font-serif text-[0.95rem] leading-[1.1] sm:text-lg lg:text-xl",
                 inverted ? "text-ink" : "text-cream drop-shadow-sm",
               )}
             >
-              La Esperanza
+              Cabañas San Martín
             </span>
             <span
               className={cn(

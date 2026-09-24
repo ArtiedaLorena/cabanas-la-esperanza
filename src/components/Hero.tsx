@@ -3,7 +3,7 @@ import { Button } from "./Button";
 import { Icon } from "./Icon";
 
 const chips = [
-  { icon: "users" as const, label: "Varias cabañas" },
+  { icon: "users" as const, label: "2 cabañas" },
   { icon: "pool" as const, label: "Pileta" },
   { icon: "grill" as const, label: "Parrilla" },
   { icon: "wifi" as const, label: "Wi-Fi" },
@@ -21,7 +21,7 @@ export function Hero() {
           />
           <img
             src="/images/hero.jpg"
-            alt="Pileta de Cabañas La Esperanza con las sierras de Villa Larca de fondo"
+            alt="Pileta de Cabañas San Martín con las sierras de Villa Larca de fondo"
             width={1536}
             height={1024}
             className="h-full w-full object-cover object-[center_38%]"
@@ -38,12 +38,12 @@ export function Hero() {
           Villa Larca · San Luis
         </p>
         <h1 className="reveal reveal-delay-1 mt-3 max-w-3xl font-serif text-[2.55rem] leading-[1.05] sm:text-6xl lg:text-[4.4rem]">
-          Cabañas La Esperanza,
+          Cabañas San Martín
           <br />
           para descansar en las sierras
         </h1>
         <p className="reveal reveal-delay-2 mt-5 max-w-xl text-base text-cream/88 sm:text-lg">
-          Un complejo de cabañas en San Martín 973, para familias y grupos.
+          Dos cabañas independientes en San Martín 973: La Promesa y La Esperanza.
           Pileta, parrilla, Wi-Fi y cochera cubierta, al pie de los Comechingones.
         </p>
 
@@ -81,7 +81,7 @@ export function Hero() {
 
 export function TrustBar() {
   const items = [
-    { icon: "users" as const, label: "Varias cabañas" },
+    { icon: "users" as const, label: "2 cabañas" },
     { icon: "snowflake" as const, label: "Aire frío / calor" },
     { icon: "car" as const, label: "Cochera cubierta" },
     { icon: "pin" as const, label: "San Martín 973" },

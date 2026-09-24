@@ -20,11 +20,11 @@ export function Services() {
     <Section id="servicios" className="py-16 sm:py-24">
       <div className="grid items-start gap-10 lg:grid-cols-[0.9fr_1.1fr]">
         <div>
-          <Eyebrow>Las cabañas</Eyebrow>
+          <Eyebrow>Servicios</Eyebrow>
           <SectionTitle>Unidades independientes, predio compartido</SectionTitle>
           <p className="mt-4 text-ink-soft">
-            El complejo tiene varias cabañas. Cada una es un alojamiento aparte,
-            con pileta, parrilla y jardín en común.
+            La Promesa y La Esperanza son dos alojamientos aparte, con pileta,
+            parrilla y jardín en común.
           </p>
           <p className="mt-3 text-sm text-ink-soft">
             La capacidad y las tarifas varían según la cabaña, la temporada y la
@@ -37,8 +37,8 @@ export function Services() {
 
         <div className="overflow-hidden rounded-[1.6rem] shadow-[var(--shadow-lift)]">
           <Photo
-            slug="cabana-galeria"
-            alt="Cabaña con galería y jardín en La Esperanza, Villa Larca"
+            slug="cabana-madera-pileta"
+            alt="Cabaña La Promesa junto a la pileta en Villa Larca"
             className="block aspect-[4/5] sm:aspect-[5/4]"
             sizes="(max-width: 1024px) 100vw, 540px"
           />

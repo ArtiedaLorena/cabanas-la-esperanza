@@ -50,7 +50,7 @@ export function Location() {
 
         <div className="overflow-hidden rounded-[1.8rem] border border-ink/10 bg-linen shadow-[var(--shadow-card)]">
           <iframe
-            title="Mapa de Cabañas La Esperanza en Villa Larca, San Luis"
+            title="Mapa de Cabañas San Martín en Villa Larca, San Luis"
             src={site.address.embedUrl}
             className="h-[320px] w-full border-0 sm:h-[420px]"
             loading="lazy"
