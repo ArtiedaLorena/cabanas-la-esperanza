@@ -144,7 +144,7 @@ export function BookingForm() {
                 name="notes"
                 rows={3}
                 className={`${inputClass} resize-y`}
-                placeholder="¿Preferís La Promesa o La Esperanza? ¿Viajan con niños? Contanos lo que haga falta."
+                placeholder="¿Preferís El Tala o Los Molles? ¿Viajan con niños? Contanos lo que haga falta."
               />
             </Field>
 

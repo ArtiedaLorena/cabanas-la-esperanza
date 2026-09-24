@@ -4,44 +4,44 @@ export const site = {
   title: "Cabañas San Martín | Villa Larca",
   cabins: [
     {
-      name: "La Promesa",
-      slug: "cabana-madera-pileta",
-      alt: "Cabaña La Promesa junto a la pileta en Villa Larca",
+      name: "El Tala",
+      slug: "cabana-galeria",
+      alt: "Cabaña El Tala en Cabañas San Martín, Villa Larca",
     },
     {
-      name: "La Esperanza",
-      slug: "cabana-galeria",
-      alt: "Cabaña La Esperanza con galería en Villa Larca",
+      name: "Los Molles",
+      slug: "cabana-madera-pileta",
+      alt: "Cabaña Los Molles en Cabañas San Martín, Villa Larca",
     },
   ] as const,
   tagline: "Descansá en Villa Larca, al pie de las sierras",
-  url: "https://cabanaslaesperanza.com.ar",
+  url: "https://cabanassanmartin.com",
   locale: "es_AR",
   description:
-    "Cabañas San Martín en Villa Larca, San Luis. Dos unidades independientes, La Promesa y La Esperanza, con pileta, parrilla, Wi-Fi, aire frío/calor y cochera cubierta. Reservá por WhatsApp.",
+    "Cabañas San Martín en Villa Larca, San Luis. Dos unidades independientes, El Tala y Los Molles, con pileta, parrilla, Wi-Fi, aire frío/calor y cochera cubierta. Reservá por WhatsApp.",
   instagram: {
-    handle: "la_esperanza_alquiler",
-    url: "https://www.instagram.com/la_esperanza_alquiler/",
+    handle: "cabanas.sanmartin",
+    url: "https://www.instagram.com/cabanas.sanmartin/",
   },
   contact: {
-    phoneDisplay: "11 3393-9545",
-    phoneTel: "+541133939545",
-    whatsapp: "5491133939545",
-    email: "debora9807@hotmail.com",
+    phoneDisplay: "11 4782-3619",
+    phoneTel: "+541147823619",
+    whatsapp: "5491147823619",
+    email: "reservas@cabanassanmartin.com",
   },
   address: {
-    street: "San Martín 973",
+    street: "Los Álamos 248",
     locality: "Villa Larca",
     region: "San Luis",
     country: "Argentina",
-    postalCode: "D5883",
-    full: "San Martín 973, Villa Larca, San Luis, Argentina",
-    lat: -32.6177721,
-    lng: -64.9759724,
+    postalCode: "D5885",
+    full: "Los Álamos 248, Villa Larca, San Luis, Argentina",
+    lat: -32.6052,
+    lng: -64.9814,
     mapsUrl:
-      "https://www.google.com/maps/search/?api=1&query=San+Mart%C3%ADn+973,+Villa+Larca,+San+Luis,+Argentina",
+      "https://www.google.com/maps/search/?api=1&query=Villa+Larca,+San+Luis,+Argentina",
     embedUrl:
-      "https://www.google.com/maps?q=San+Mart%C3%ADn+973,+Villa+Larca,+San+Luis,+Argentina&hl=es&z=16&output=embed",
+      "https://www.google.com/maps?q=Villa+Larca,+San+Luis,+Argentina&hl=es&z=15&output=embed",
   },
   capacity: 6,
   bookingGuestsMax: 12,
@@ -49,8 +49,6 @@ export const site = {
     matrimonial: 1,
     individual: 4,
   },
-  municipalSource:
-    "https://municipalidadvillalarca.com/dondealojarse/",
 } as const;
 
 export const navLinks = [
@@ -71,8 +69,8 @@ export const gallery = [
   },
   {
     slug: "cabana-galeria",
-    alt: "Cabaña La Esperanza con galería y jardín en Villa Larca",
-    caption: "La Esperanza",
+    alt: "Cabaña El Tala con jardín en Villa Larca",
+    caption: "El Tala",
   },
   {
     slug: "cabana-cochera",
@@ -96,8 +94,8 @@ export const gallery = [
   },
   {
     slug: "complejo-pileta",
-    alt: "Vista del predio de La Promesa con pileta en Villa Larca",
-    caption: "La Promesa y pileta",
+    alt: "Pileta de Cabañas San Martín en Villa Larca",
+    caption: "Pileta del predio",
   },
   {
     slug: "sierras-comechingones",
@@ -121,15 +119,15 @@ export const gallery = [
   },
   {
     slug: "cabana-madera-pileta",
-    alt: "Cabaña La Promesa junto a la pileta en Villa Larca",
-    caption: "La Promesa",
+    alt: "Cabaña Los Molles en Villa Larca",
+    caption: "Los Molles",
   },
 ] as const;
 
 export const amenities = [
   {
     title: "Capacidad por unidad",
-    text: "Hay cabañas habilitadas para hasta 6 personas. Si son más, consultá por La Promesa y La Esperanza juntas.",
+    text: "Hay cabañas habilitadas para hasta 6 personas. Si son más, consultá por El Tala y Los Molles juntas.",
   },
   {
     title: "Cocina equipada",
@@ -272,19 +270,19 @@ export const activities = [
 export const faqs = [
   {
     q: "¿Cómo puedo reservar?",
-    a: "La reserva se hace de forma directa. Completá el formulario de esta página o escribinos por WhatsApp al 11 3393-9545 con las fechas y la cantidad de personas. Te confirmamos disponibilidad.",
+    a: "La reserva se hace de forma directa. Completá el formulario de esta página o escribinos por WhatsApp al 11 4782-3619 con las fechas y la cantidad de personas. Te confirmamos disponibilidad.",
   },
   {
     q: "¿Dónde están ubicados?",
-    a: "En San Martín 973, Villa Larca, San Luis, al pie de las Sierras de los Comechingones. Podés abrir la ubicación en Google Maps desde esta página.",
+    a: "En Los Álamos 248, Villa Larca, San Luis, al pie de las Sierras de los Comechingones. Podés abrir la ubicación en Google Maps desde esta página.",
   },
   {
     q: "¿Cuántas personas entran?",
-    a: "Hay dos cabañas: La Promesa y La Esperanza. La capacidad depende de cada una: algunas entran hasta 6 personas. Contanos cuántos son y te proponemos la que mejor calce, o las dos si hace falta.",
+    a: "Hay dos cabañas: El Tala y Los Molles. La capacidad depende de cada una: algunas entran hasta 6 personas. Contanos cuántos son y te proponemos la que mejor calce, o las dos si hace falta.",
   },
   {
     q: "¿Puedo reservar más de una cabaña?",
-    a: "Sí. Podés consultar La Promesa, La Esperanza o las dos. Contanos cuántas personas viajan y te confirmamos disponibilidad.",
+    a: "Sí. Podés consultar El Tala, Los Molles o las dos. Contanos cuántas personas viajan y te confirmamos disponibilidad.",
   },
   {
     q: "¿Qué incluye el alojamiento?",
