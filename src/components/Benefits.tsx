@@ -29,7 +29,7 @@ export function Benefits() {
               sizes="(max-width: 640px) 100vw, 50vw"
             />
             <div className="px-5 py-4">
-              <h3 className="font-serif text-2xl text-ink">{cabin.name}</h3>
+              <h3 className="font-serif text-2xl font-medium text-ink">{cabin.name}</h3>
             </div>
           </li>
         ))}

@@ -50,40 +50,34 @@ export function Navbar() {
       )}
     >
       <nav
-        className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-3 px-4 sm:h-[4.75rem] sm:gap-4 sm:px-8 lg:px-10"
+        className="mx-auto flex h-[4.75rem] max-w-6xl items-center justify-between gap-3 px-4 sm:h-[5.25rem] sm:gap-4 sm:px-8 lg:px-10"
         aria-label="Principal"
       >
         <a
           href="#inicio"
-          className="flex min-h-11 min-w-0 items-center gap-2 sm:gap-2.5"
+          className="flex min-h-12 min-w-0 items-center gap-2.5 sm:gap-3.5"
           aria-label="Cabañas San Martín, Villa Larca"
           onClick={() => setOpen(false)}
         >
           <span
             className={cn(
-              "flex h-10 w-12 shrink-0 items-center justify-center rounded-xl px-1 sm:h-11 sm:w-14",
+              "flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden rounded-2xl sm:h-16 sm:w-16",
               inverted ? "bg-transparent" : "bg-cream/95 shadow-sm",
             )}
           >
-            <Logo variant="mark" className="h-7 w-auto sm:h-8" />
+            <Logo
+              variant="mark"
+              className="h-[4.5rem] w-[4.5rem] max-w-none object-cover sm:h-20 sm:w-20"
+            />
           </span>
-          <span className="min-w-0 leading-tight">
-            <span
-              className={cn(
-                "block font-serif text-[0.95rem] leading-[1.1] sm:text-lg lg:text-xl",
-                inverted ? "text-ink" : "text-cream drop-shadow-sm",
-              )}
-            >
-              Cabañas San Martín
-            </span>
-            <span
-              className={cn(
-                "block truncate text-[0.6rem] uppercase tracking-[0.16em] sm:text-[0.65rem] sm:tracking-[0.18em]",
-                inverted ? "text-ink-soft" : "text-cream/75",
-              )}
-            >
-              Villa Larca
-            </span>
+          <span
+            className={cn(
+              "min-w-0 font-serif text-lg font-medium leading-[1.05] sm:text-xl lg:text-[1.4rem]",
+              inverted ? "text-ink" : "text-cream drop-shadow-sm",
+            )}
+          >
+            <span className="block">Cabañas</span>
+            <span className="block">San Martín</span>
           </span>
         </a>
 
@@ -129,7 +123,7 @@ export function Navbar() {
       <div
         id="menu-mobile"
         hidden={!open}
-        className="max-h-[calc(100svh-4rem-env(safe-area-inset-top))] overflow-y-auto border-t border-ink/10 bg-cream lg:hidden"
+        className="max-h-[calc(100svh-4.75rem-env(safe-area-inset-top))] overflow-y-auto border-t border-ink/10 bg-cream lg:hidden"
       >
         <ul className="flex flex-col gap-1 px-4 py-4 pb-[max(1rem,env(safe-area-inset-bottom))] sm:px-8">
           {navLinks.map((link) => (

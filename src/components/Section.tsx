@@ -29,7 +29,7 @@ export function Eyebrow({ children }: { children: ReactNode }) {
 
 export function SectionTitle({ children }: { children: ReactNode }) {
   return (
-    <h2 className="font-serif text-[2rem] leading-[1.15] text-ink sm:text-4xl lg:text-[2.75rem]">
+    <h2 className="font-serif text-[2rem] font-medium leading-[1.15] tracking-[-0.02em] text-ink sm:text-4xl lg:text-[2.75rem]">
       {children}
     </h2>
   );

@@ -21,7 +21,7 @@ export function FinalCTA() {
           <p className="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-sand">
             ¿Listo para reservar?
           </p>
-          <h2 className="mx-auto mt-3 max-w-2xl font-serif text-4xl leading-tight sm:text-5xl">
+          <h2 className="mx-auto mt-3 max-w-2xl font-serif text-4xl font-medium leading-tight tracking-[-0.02em] sm:text-5xl">
             Cabañas San Martín te están esperando
           </h2>
           <p className="mx-auto mt-4 max-w-lg text-cream/85">
@@ -55,7 +55,7 @@ export function Footer() {
               <Logo variant="mark" className="h-8 w-auto" />
             </span>
             <span className="leading-tight">
-              <span className="block font-serif text-base leading-tight text-cream sm:text-xl">
+              <span className="block font-serif text-base font-medium leading-tight text-cream sm:text-xl">
                 Cabañas San Martín
               </span>
               <span className="block text-[0.65rem] uppercase tracking-[0.18em] text-cream/75">
