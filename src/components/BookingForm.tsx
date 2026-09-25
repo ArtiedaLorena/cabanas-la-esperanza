@@ -67,7 +67,7 @@ export function BookingForm() {
             sizes="40vw"
           />
           <div className="absolute inset-0 bg-night/25" />
-          <p className="absolute bottom-8 left-8 right-8 font-serif text-3xl leading-tight text-cream">
+          <p className="absolute bottom-8 left-8 right-8 font-serif text-3xl font-medium leading-tight tracking-[-0.02em] text-cream">
             Contanos tus fechas y te respondemos por WhatsApp.
           </p>
         </div>

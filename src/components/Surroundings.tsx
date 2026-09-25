@@ -31,7 +31,7 @@ export function Surroundings() {
               <p className="text-[0.7rem] font-semibold uppercase tracking-[0.16em] text-brick">
                 {place.tag}
               </p>
-              <h3 className="mt-2 font-serif text-2xl text-ink">{place.title}</h3>
+              <h3 className="mt-2 font-serif text-2xl font-medium text-ink">{place.title}</h3>
               <p className="mt-2 text-sm text-ink-soft">{place.text}</p>
               <p className="mt-4 text-xs text-ink-soft/80">Foto: {place.credit}</p>
             </div>
